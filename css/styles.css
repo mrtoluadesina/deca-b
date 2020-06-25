@@ -140,6 +140,9 @@ main .works .content .work-steps .step {
   align-items: center;
   padding: 0.5rem 2rem 1.5rem;
 }
+main .works .content .work-steps .step:nth-child(2) .step-img img {
+  max-width: 150px;
+}
 
 main .works .content .work-steps .step .step-img {
   padding: 0.5rem 0;
@@ -171,7 +174,6 @@ main .works .content .work-steps .step .step-info p {
 main .works .content .work-steps .step .step-info .btn {
   padding: 1rem;
 }
-
 
 @media (min-width: 480px) {
   header .content .nav li a:not(.btn) {
@@ -218,12 +220,37 @@ main .works .content .work-steps .step .step-info .btn {
     align-items: center;
     padding: 0.5rem 2rem 1.5rem;
   }
+  main .works .content .work-steps .step:nth-child(2) .step-img {
+    order: 1;
+  }
+  main .works .content .work-steps .step:nth-child(2) .step-img img {
+    max-width: 182px;
+    margin-left: 3rem;
+  }
+  main .works .content .work-steps .step:nth-child(2) .step-info {
+    padding-left: 0.5rem;
+  }
   main .works .content .work-steps .step .step-img,
   main .works .content .work-steps .step .step-info {
     flex: 0 0 50%;
   }
   main .works .content .work-steps .step .step-info {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
+  }
+  main .works .content .work-steps .step.diff-step {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .works .content .work-steps .step.diff-step .step-info {
+    align-items: center;
+    padding-left: 0;
+  }
+  main .works .content .work-steps .step.diff-step .step-info p {
+    text-align: center;
+  }
+  main .works .content .work-steps .step.diff-step .step-img {
+    flex: 0 0 100%;
   }
 }
 
@@ -241,12 +268,30 @@ main .works .content .work-steps .step .step-info .btn {
   main .statistics .content .stats {
     max-width: 180px;
   }
+  main .works .content .work-steps {
+    background-image: url(../images/step-link.jpg);
+    background-repeat: no-repeat;
+    background-size: 7.5%;
+    background-position: 50% 25%;
+  }
+  main .works .content .work-steps .step {
+    padding: 1rem 2rem 1.5rem;
+  }
   main .works .content .work-steps .step .step-img img,
   main .works .content .work-steps .step .step-info p {
     max-width: 320px;
   }
   main .works .content .work-steps .step .step-info {
     padding-left: 3rem;
+  }
+  main .works .content .work-steps .step:nth-child(2) .step-img img {
+    max-width: 211px;
+  }
+  main .works .content .work-steps .step.diff-step {
+    padding-top: 1.5rem;
+  }
+  main .works .content .work-steps .step.diff-step .step-img img {
+    max-width: unset;
   }
 }
 
@@ -266,6 +311,10 @@ main .works .content .work-steps .step .step-info .btn {
   main .works .content .work-steps .step .step-img img,
   main .works .content .work-steps .step .step-info p {
     max-width: 380px;
+  }
+  main .works .content .work-steps {
+    background-size: 6.25%;
+    background-position: 50% 22%;
   }
 }
 
