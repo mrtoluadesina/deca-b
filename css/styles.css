@@ -175,6 +175,39 @@ main .works .content .work-steps .step .step-info .btn {
   padding: 1rem;
 }
 
+main .faq-section {
+  display: flex;
+}
+
+main .faq-section .content .faq-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer {
+  display: flex;
+  padding: 1rem
+}
+
+footer .content {
+  flex-direction: column;
+  border-top: 1px solid var(--grey);
+}
+
+footer .content .footer-img {
+  max-width: 120px;
+}
+
+footer .content .footer-img img {
+  width: 100%;
+  padding: 1rem;
+}
+
+footer .content p {
+  font-size: 12px;
+}
+
 @media (min-width: 480px) {
   header .content .nav li a:not(.btn) {
     display: unset;
@@ -251,6 +284,15 @@ main .works .content .work-steps .step .step-info .btn {
   }
   main .works .content .work-steps .step.diff-step .step-img {
     flex: 0 0 100%;
+  }
+  main .faq-section {
+    padding: 2rem 0;
+  }
+  main .faq-section .content .faq-title {
+    flex: 0 0 30%;
+  }
+  main .faq-section .content .faq-accordion {
+    flex: 0 0 50%;
   }
 }
 
